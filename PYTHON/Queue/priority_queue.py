@@ -26,6 +26,8 @@ Notes:
     - Can be implemented through: Array, Linked List, Heap, Binary Search Tree.
 """
 
+# TODO: Implement Priority Queue using Max Heap
+
 # Using Queue
 
 class PriorityQueue(object):
