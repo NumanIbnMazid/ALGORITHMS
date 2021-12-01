@@ -1,8 +1,9 @@
-print((4 + 1) % 4 == -1)
-print([None] * 5)
-print((2 + 1) % 6)
-print(5 // 2)
 
-print((11 // 2) - 1)
-for i in range((10 // 2) - 1, -1, -1):
-    print(i, " -x")
+myArr = [100, 90, 110, 110, 50, 20, 70, 40, 10]
+
+for i in range(0, len(myArr) - 1):
+    for j in range(0, len(myArr) - i - 1):
+        if myArr[j] > myArr[j + 1]:
+            myArr[j], myArr[j + 1] = myArr[j + 1], myArr[j]
+
+print(myArr)
