@@ -2,7 +2,7 @@
 Keywords: Min Heap
 """
 
-# TODO: Bug in Insert Method (Overall not working as Min Heap Works)
+# TODO: Bug in Insert Method (Overall not working on the way that the Min Heap Works)
 
 class Heap():
     def __init__(self, array=[]):
