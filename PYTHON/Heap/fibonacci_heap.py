@@ -9,3 +9,6 @@ Time Complexity:
     - Deleting Node: O(1)
     - Concatening: O(1)
 """
+
+# https://setscholars.net/python-data-structure-and-algorithm-tutorial-fibonacci-heap/
+# https://www.sanfoundry.com/python-program-implement-fibonacci-heap/
