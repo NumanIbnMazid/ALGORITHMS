@@ -24,6 +24,8 @@ Time Complexity:
     -   Search          O(log n)        O(log n)            O(n)
     -   Insertion       O(log n)        O(log n)            O(n)
     -   Deletion        O(log n)        O(log n)            O(n)
+Space Complexity:
+    - O(n): For all operations
 """
 
 class BinarySearchTreeNode:

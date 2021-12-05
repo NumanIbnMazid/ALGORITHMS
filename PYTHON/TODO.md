@@ -4,6 +4,4 @@
 
 * Fibonacci Heap + Fibonacci Heap Operations
 
-## Next
-
-* <https://www.programiz.com/dsa/linked-list>
+* AVL Tree
