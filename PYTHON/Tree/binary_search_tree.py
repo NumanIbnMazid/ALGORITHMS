@@ -51,6 +51,43 @@ def search(root, value):
     else:
         return search(root.leftChild, value)
     
+# Find the inorder successor
+def minValueNode(node):
+    current = node
+
+    # Find the leftmost leaf
+    while(current.leftChild is not None):
+        current = current.leftChild
+
+    return current
+    
+def delete(root, data):
+    # return if the tree is empty
+    if root is None:
+        return root
+    # find the node to be deleted
+    if data < root.data:
+        root.leftChild = delete(root.leftChild, data)
+    elif data > root.data:
+        root.rightChild = delete(root.rightChild, data)
+    else:
+        # if the node is with only one child or no child
+        if root.leftChild is None:
+            temp = root.rightChild
+            root = None
+            return temp
+        elif root.rightChild is None:
+            temp = root.leftChild
+            root = None
+            return temp
+        # if the node has two children place the inorder successor in position of the node to be deleted
+        temp = minValueNode(root.rightChild)
+        root.data = temp.data
+        
+        # delete the inorder successor
+        root.rightChild = delete(root.rightChild, temp.data)
+    return root
+    
 def findLargestElement(root):
     # check if the binary serach tree is empty
     if root is None:
@@ -174,4 +211,8 @@ print()
 # in-order traversal
 print("in-order traversal:")
 inorder(root=root)
+print()
+root = delete(root, 10)
+print("Inorder traversal after deleting: ")
+inorder(root)
 print()
