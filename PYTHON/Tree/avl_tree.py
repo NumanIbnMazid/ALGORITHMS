@@ -12,6 +12,10 @@ Operations:
     - Left Rotate
     - Right Rotate
     - Left-Right and Right-Left Rotate
+Time Complexity:
+    - Insertion: O(log n)
+    - Deletion: O(log n)
+    - Search: O(log n)
 """
 
 
