@@ -19,6 +19,11 @@ Deletion Operation:
         * Get the inorder successor of that node.
         * Replace the node with the inorder successor.
         * Remove the inorder successor from it's original position.
+Time Complexity:
+        (operation)     (best case)     (average case)      (worst case)
+    -   Search          O(log n)        O(log n)            O(n)
+    -   Insertion       O(log n)        O(log n)            O(n)
+    -   Deletion        O(log n)        O(log n)            O(n)
 """
 
 class BinarySearchTreeNode:
