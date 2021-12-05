@@ -31,8 +31,9 @@ def is_complete(root, index, numberOfNodes):
     if index >= numberOfNodes:
         return False
 
-    return (is_complete(root.left, 2 * index + 1, numberOfNodes)
-            and is_complete(root.right, 2 * index + 2, numberOfNodes))
+    return (
+        is_complete(root.left, 2 * index + 1, numberOfNodes) and is_complete(root.right, 2 * index + 2, numberOfNodes)
+    )
 
 
 root = Node(1)
