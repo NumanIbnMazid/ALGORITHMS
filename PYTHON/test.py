@@ -1,13 +1,24 @@
-i = 0
 
-for i in range(0, 23):
-    if i == 15:
-        break
-    
-print("The value of `i` is: ", i)
+# import fractions
 
-myArr = [j for j in range(0, 23)]
 
-print(len(myArr) // 2, "ZZZZZZ", len(myArr))
-for x in range(len(myArr) // 2, -1, -1):
-    print('The value of `x` is: ', x)
+# def percent_to_fraction(percent_number):
+#     decimal_number = percent_number / 100
+#     fraction = fractions.Fraction(decimal_number)
+#     return fraction
+
+
+# percent_input = 75
+# fraction_output = percent_to_fraction(percent_input)
+# print('fraction result is:{0}'.format(fraction_output))
+
+def findOdd(lowerBound, upperBound):
+    totalNumberOfOddNumbers = 0
+    for i in range(lowerBound, upperBound + 1):
+        if (i % 2 != 0):
+            totalNumberOfOddNumbers += 1
+    return totalNumberOfOddNumbers
+
+
+print(findOdd(1, 10))
+print(findOdd(2, 15))

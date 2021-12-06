@@ -22,8 +22,6 @@ Time Complexity:
 import sys
 
 # Create a tree node
-
-
 class TreeNode(object):
     def __init__(self, key):
         self.key = key
