@@ -38,3 +38,9 @@
 
 # queue = collections.deque([1, 3, 4, 5])
 # print(queue)
+
+myArr = [1, 2, 3, 4, 5, 6, 7]
+
+for i in range(0, len(myArr)):
+    for j in range(0, len(myArr) - i - 1):
+        print(myArr[i], myArr[j])
