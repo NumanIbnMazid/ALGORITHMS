@@ -32,4 +32,9 @@
 
 # print(set({"1":"2"}))
 
-print({'1', '2'} - {'1'})
+# print({'1', '2'} - {'1'})
+
+# import collections
+
+# queue = collections.deque([1, 3, 4, 5])
+# print(queue)
