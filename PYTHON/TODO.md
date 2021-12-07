@@ -7,3 +7,7 @@
 * AVL Tree
 
 * B-Tree (Remains Incomplete)
+
+* Red-Black Tree
+
+* Strongly Connected Components
