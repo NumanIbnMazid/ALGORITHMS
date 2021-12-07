@@ -12,13 +12,19 @@
 # fraction_output = percent_to_fraction(percent_input)
 # print('fraction result is:{0}'.format(fraction_output))
 
-def findOdd(lowerBound, upperBound):
-    totalNumberOfOddNumbers = 0
-    for i in range(lowerBound, upperBound + 1):
-        if (i % 2 != 0):
-            totalNumberOfOddNumbers += 1
-    return totalNumberOfOddNumbers
+# def findOdd(lowerBound, upperBound):
+#     totalNumberOfOddNumbers = 0
+#     for i in range(lowerBound, upperBound + 1):
+#         if (i % 2 != 0):
+#             totalNumberOfOddNumbers += 1
+#     return totalNumberOfOddNumbers
 
 
-print(findOdd(1, 10))
-print(findOdd(2, 15))
+# print(findOdd(1, 10))
+# print(findOdd(2, 15))
+
+myList = []
+size = 10
+for i in range(size):
+    myList.append([0 for i in range(size)])
+print(myList)
