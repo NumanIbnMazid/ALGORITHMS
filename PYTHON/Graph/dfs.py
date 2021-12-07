@@ -28,3 +28,34 @@ graph = {
 }
 
 dfs(graph=graph, start='0')
+
+
+print("\n------- Implementation Two -------\n")
+
+graph = {
+    '5': ['3', '7'],
+    '3': ['2', '4'],
+    '7': ['8'],
+    '2': [],
+    '4': ['8'],
+    '8': []
+}
+
+visited = set()
+
+result = ""
+
+def bfs(graph, node, visited=None):
+    if node not in visited:
+        # print(node)
+        global result
+        result += node + " -> "
+        visited.add(node)
+        
+        for neighbour in graph[node]:
+            bfs(graph=graph, node=neighbour, visited=visited)
+            
+
+print("Following is the Depth-First Search")
+bfs(graph=graph, node="5", visited=visited)
+print(result)
