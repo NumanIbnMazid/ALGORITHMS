@@ -23,8 +23,13 @@
 # print(findOdd(1, 10))
 # print(findOdd(2, 15))
 
-myList = []
-size = 10
-for i in range(size):
-    myList.append([0 for i in range(size)])
-print(myList)
+# myList = []
+# size = 10
+# for i in range(size):
+#     myList.append([0 for i in range(size)])
+# print(myList)
+
+
+# print(set({"1":"2"}))
+
+print({'1', '2'} - {'1'})
